@@ -1,1 +1,1 @@
-# vr-aikataulu
+# aikataulu
