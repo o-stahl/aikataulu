@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="googlebot" content="noindex, nofollow">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- bootstrap -->
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+		<!-- bootstrap -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+		<!-- autocomplete/jquery -->
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<!-- autocomplete/jquery -->
+		<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<!-- websocket/mqtt -->
+		<script type="text/javascript" src="http://www.hivemq.com/demos/websocket-client/js/mqttws31.js"></script> 
+		
+		<link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+		
+	</head>
+	<body>
+		
+		<script type="text/javascript" src="./resources/js/index.js"></script> 
+		
+		<div class="card" id="main-card">
+			<h1 class="card-title" id="main-card-title">Aseman junatiedot</h1>
+			
+			<div class="card-body" id="main-card-body">
+				
+				<div id="search">
+					<label for="tags">Hae aseman nimell&auml;</label>
+					<input id="tags">
+				</div>
+				
+					<div id="tabbies">
+						
+						<ul class="nav nav-tabs">
+						  <li class="active"><a data-toggle="tab" href="#inbound-tab">Saapuvat</a></li>
+						  <li><a data-toggle="tab" href="#outbound-tab">L&auml;htev&auml;t</a></li>
+						</ul>
+						
+						<div class="tab-content">
+						
+							<div id="inbound-tab" class="tab-pane fade in active">
+								<div class="table-responsive">
+									<table class="table table-striped">
+										<thead id="train-thead">
+											<tr>
+												<th>Juna</th>
+												<th>Lähtöasema</th>
+												<th>Pääteasema</th>
+												<th>Saapuu</th>
+											</tr>
+										</thead>
+										<tbody class="train-rows" id="inbound">
+										</tbody>
+									</table>
+								</div>
+							</div>
+							
+							<div id="outbound-tab" class="tab-pane fade">
+								<div class="table-responsive">
+									<table class="table table-striped">
+										<thead id="train-thead">
+											<tr>
+												<th>Juna</th>
+												<th>Lähtöasema</th>
+												<th>Pääteasema</th>
+												<th>Saapuu</th>
+											</tr>
+										</thead>
+										<tbody class="train-rows" id="outbound">
+										</tbody>
+									</table>
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+				
+			</div>
+			
+		</div>
+	  
+	</body>
+	
+</html>

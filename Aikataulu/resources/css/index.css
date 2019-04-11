@@ -1,0 +1,109 @@
+#main-card {
+  margin: 1 em;
+  box-shadow: 0px 0px 5px gray;
+}
+
+#main-card-title {
+  margin: 0px;
+  font-size: 1em;
+  background-color: rgb(86, 163, 25);
+  color: rgb(255, 255, 255);
+  padding: 1.5em;
+  box-shadow: 0px 1px 10px 0px gray;
+}
+
+#main-card-body {
+  padding: 1.5em;
+}
+
+#tabbies {
+  padding-top: 1em;
+}
+
+#tags {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(225, 225, 225);
+  padding: 0.25em;
+  padding-left: 0.5em;
+  border-radius: 5px;
+}
+
+#tags.ui-result-valid {
+  background-color: rgb(238, 243, 237);
+}
+
+#tags.ui-result-not-valid {
+  background-color: rgb(243, 238, 237);
+}
+
+#search>label {
+  display: block;
+  color: rgb(75, 75, 75);
+}
+
+#train-thead {
+  font-size: 0.75em;
+  color: rgb(211, 211, 211);
+}
+
+tbody.train-rows {
+  font-weight: bold;
+  color: rgb(110, 110, 110);
+}
+
+tbody.train-rows>tr>td.single-line {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+tbody.train-rows>tr>td.double-line {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+tbody.train-rows>tr>td.delayed>div.delayed-top {
+  display: block;
+  color: rgb(255, 0, 0);
+}
+
+tbody.train-rows>tr>td.delayed>div.delayed-bottom {
+  font-size: 0.75em;
+}
+
+tbody.train-rows>tr.cancelled>td>div.delayed-top {
+  display: block;
+  color: rgb(211, 211, 211);
+}
+
+tbody.train-rows>tr.cancelled>td>div.delayed-bottom {
+  font-size: 1em;
+  color: rgb(255, 0, 0);
+}
+
+.nav>li>a {
+  font-weight: bold;
+  color: rgb(86, 163, 25);
+}
+
+.ui-autocomplete-input-has-clear {
+  padding-right: $ui-autocomplete-clear-size * 1.5;
+}
+
+.ui-autocomplete-input-has-clear::-ms-clear {
+  display: none;
+}
+
+.ui-autocomplete-clear {
+  overflow: hidden;
+  padding: 0 5px 0 10px;
+  display: inline;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.5em;
+  line-height: 1em;
+}
+
+tr.cancelled {
+  color: rgb(211, 211, 211);
+}
