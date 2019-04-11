@@ -21,9 +21,9 @@ $(function() {
 	var prevFocus = document.hasFocus(); 
 	function isPageFocused() {
 		if (!document.hasFocus() && prevFocus) {
-			//client.disconnect();
+			client.disconnect();
 		} else if (!prevFocus && document.hasFocus()){
-			//client.connect(options);
+			client.connect(options);
 		}
 		prevFocus = document.hasFocus();
 	}
